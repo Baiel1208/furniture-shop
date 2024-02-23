@@ -1,0 +1,68 @@
+{% load static %}
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top-row">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer__content">
+                    <div class="footer-logo">
+                        <img src="{% static 'images/logo.png' %}" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A debitis dignissimos dolorem eum ex
+                        libero
+                        molestias qui quos repellat sunt.</p>
+                    <ul class="social-media">
+                        <li class="social-media__item">
+                            <a href="#"><i class="icon-facebook"></i></a>
+                        </li>
+                        <li class="social-media__item">
+                            <a href="#"><i class="icon-instagram"></i></a>
+                        </li>
+                        <li class="social-media__item">
+                            <a href="#"><i class="icon-twitter"></i></a>
+                        </li>
+                        <li class="social-media__item">
+                            <a href="#"><i class="icon-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 footer__content">
+                    <h5 class="footer-heading">Полезные ссылки</h5>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a href="{% url "index" %}">Главная страница</a></li>
+                        <li class="footer-list__item"><a href="blog-grid.html">Блог</a></li>
+                        <li class="footer-list__item"><a href="#">Каталоги</a></li>
+                        <li class="footer-list__item"><a href="{% url "about" %}">Услуги</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer__content">
+                    <h5 class="footer-heading">Нужна помощь?</h5>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a href="{% url "contact" %}">Контакты</a></li>
+                        <li class="footer-list__item"><a href="faq.html">Часто задаваемые вопросы</a></li>
+                        <li class="footer-list__item"><a href="#">Политика конфиденциальности</a></li>
+                        <li class="footer-list__item"><a href="payment-shipping.html">Оплата и доставка</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer__content">
+                    <h5 class="footer-heading">Оставайтесь на связи</h5>
+                    <ul class="footer-list footer-list-info">
+                        <li class="footer-list__item">
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <span>NO.22, Main street, 21 Ave, Los Angeles, California</span>
+                        </li>
+                        <li class="footer-list__item">
+                            <span><i class="fas fa-phone"></i></span>
+                            <span>+123456789</span></li>
+                        <li class="footer-list__item">
+                            <span><i class="fas fa-envelope"></i></span>
+                            <span>Info@info.com</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; copyright 2024. Designed with love by Baiel </p>
+        </div>
+    </div>
+</footer>
