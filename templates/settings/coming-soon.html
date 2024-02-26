@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sofa</title>
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" sizes="32x32">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" sizes="32x32">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -27,7 +29,7 @@
 </head>
 
 <body>
-<div class="countdown countdown__cover" style="background-image: url('images/coming-soon.jpg');">
+<div class="countdown countdown__cover" style="background-image: url('{% static "images/coming-soon.jpg" %}'');">
     <div class="body-overlay"></div>
     <div class="countdown__bg">
         <div class="container">
@@ -63,7 +65,7 @@
                     <li><a href="#"><i class="icon-linkedin"></i></a></li>
                 </ul>
                 <!-- footer link back to home -->
-                <a href="index.html" class="countdown__footer--home-link">Back To Home</a>
+                <a href="{% url "index" %}" class="countdown__footer--home-link">Back To Home</a>
             </div>
         </div>
     </div>
@@ -78,27 +80,27 @@
 <!-- end loader -->
 
 <!-- All Jquery -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/popper.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 <!-- owl carousel js -->
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="{% static 'js/owl.carousel.min.js' %}"></script>
 <!-- Jquery ui -->
-<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
 <!-- light box js -->
-<script type="text/javascript" src="js/lightbox.min.js"></script>
+<script type="text/javascript" src="{% static 'js/lightbox.min.js' %}"></script>
 <!-- typeahead js -->
-<script type="text/javascript" src="js/typeahead.jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/typeahead.jquery.min.js' %}"></script>
 <!-- master zoom image js -->
-<script type="text/javascript" src="js/jquery.zoom.min.js"></script>
+<script type="text/javascript" src="{% static 'js/jquery.zoom.min.js' %}"></script>
 <!-- countdown js -->
-<script type="text/javascript" src="js/countdown.jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/countdown.jquery.min.js' %}"></script>
 <!-- nice select js -->
-<script type="text/javascript" src="js/nice-select.min.js"></script>
+<script type="text/javascript" src="{% static 'js/nice-select.min.js' %}"></script>
 <!-- wow js -->
-<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
 <!-- custom js -->
-<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
 
 </body>
 </html>
